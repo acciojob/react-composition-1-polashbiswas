@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 
 const Tabs = ({ arr }) => {
-    let [tabArr, setTabArr] = useState([]);
+    let [tabArr, setTabArr] = useState([arr[0].content]);
 
     function clickTab(value){
         setTabArr(value.content);
